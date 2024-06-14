@@ -1,0 +1,32 @@
+{
+  "name": "cypress-bdd-automation",
+  "version": "1.0.0",
+  "description": "Web, API",
+  "main": "index.js",
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "web",
+    "api"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@types/mocha": "^10.0.6",
+    "cypress": "^13.6.6",
+    "esbuild": "^0.20.1",
+    "prettier": "3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
+    "cypress-parallel": "^0.14.0",
+    "dayjs": "^1.11.10"
+  },
+  "scripts": {
+    "cy:run": "npx cypress run --headed --record --key 2d453c06-8838-4ef7-81e5-6b7dc8fd9f13",
+    "report": "node report.ts",
+    "testAndreport": "npm run test && npm run report",
+    "cy:parallel": "npx cypress-parallel -d cypress/e2e/specs/ -t 2 -s cy:run"
+  }
+}

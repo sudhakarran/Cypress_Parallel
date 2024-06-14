@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2024-06-14T08:47:20.315Z",
+  "duration": 7053,
+  "file": "cypress\\e2e\\specs\\parallel1.cy.ts"
+}
